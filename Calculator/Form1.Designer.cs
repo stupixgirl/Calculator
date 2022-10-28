@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSo1 = new System.Windows.Forms.TextBox();
+            this.txtSo2 = new System.Windows.Forms.TextBox();
+            this.txtKq = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btAdd
@@ -45,6 +45,7 @@
             this.btAdd.TabIndex = 0;
             this.btAdd.Text = "Cong";
             this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
             // label1
             // 
@@ -73,35 +74,35 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Ket qua:";
             // 
-            // textBox1
+            // txtSo1
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(423, 34);
-            this.textBox1.TabIndex = 4;
+            this.txtSo1.Location = new System.Drawing.Point(155, 121);
+            this.txtSo1.Name = "txtSo1";
+            this.txtSo1.Size = new System.Drawing.Size(423, 34);
+            this.txtSo1.TabIndex = 4;
             // 
-            // textBox2
+            // txtSo2
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 213);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(423, 34);
-            this.textBox2.TabIndex = 5;
+            this.txtSo2.Location = new System.Drawing.Point(155, 213);
+            this.txtSo2.Name = "txtSo2";
+            this.txtSo2.Size = new System.Drawing.Size(423, 34);
+            this.txtSo2.TabIndex = 5;
             // 
-            // textBox3
+            // txtKq
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 302);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(423, 34);
-            this.textBox3.TabIndex = 6;
+            this.txtKq.Location = new System.Drawing.Point(155, 302);
+            this.txtKq.Name = "txtKq";
+            this.txtKq.Size = new System.Drawing.Size(423, 34);
+            this.txtKq.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 514);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKq);
+            this.Controls.Add(this.txtSo2);
+            this.Controls.Add(this.txtSo1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,9 +122,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSo1;
+        private System.Windows.Forms.TextBox txtSo2;
+        private System.Windows.Forms.TextBox txtKq;
     }
 }
 
