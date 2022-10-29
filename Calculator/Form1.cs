@@ -19,6 +19,7 @@ namespace Calculator
 
         private void btAdd_Click(object sender, EventArgs e)
         {
+
             if(txtSo1.Text != String.Empty)
             {
                 double a = double.Parse(txtSo1.Text);
