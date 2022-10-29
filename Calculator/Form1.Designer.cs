@@ -42,7 +42,7 @@
             // 
             this.btAdd.Location = new System.Drawing.Point(436, 396);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(185, 59);
+            this.btAdd.Size = new System.Drawing.Size(112, 59);
             this.btAdd.TabIndex = 0;
             this.btAdd.Text = "Cong";
             this.btAdd.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btTru
             // 
-            this.btTru.Location = new System.Drawing.Point(229, 396);
+            this.btTru.Location = new System.Drawing.Point(299, 396);
             this.btTru.Name = "btTru";
-            this.btTru.Size = new System.Drawing.Size(185, 59);
+            this.btTru.Size = new System.Drawing.Size(115, 59);
             this.btTru.TabIndex = 7;
             this.btTru.Text = "Tru";
             this.btTru.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btAdd);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Tinh toan";
             this.ResumeLayout(false);
