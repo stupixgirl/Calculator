@@ -8,6 +8,8 @@ namespace CalculatorTester
     public class UnitTest1
     {
         public Calculation cal;
+        public  TestContext TestContext { get; set; }
+
         [TestInitialize]
         public void setup()
         {
@@ -37,15 +39,22 @@ namespace CalculatorTester
         [ExpectedException(typeof(DivideByZeroException))]
         public void TestDivByZero()
         {
-            Calculation c = new Calculation(2,0);
+            Calculation c = new Calculation(2, 0);
             c.Execute("/");
         }
-     /* [TestMethod]
-           public void TestDivRound()
-         {
-             Calculation c = new Calculation(5, 3);
-             Assert.AreEqual(c.Execute("/"), 2); 
-         }*/
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
+ @".\Data\TestData.csv", "TestData#csv", DataAccessMethod.Sequential)]
+        public void TestWithDataSource()
+        {
+            int a, b, expected, actual;
+            a = int.Parse(TestContext.DataRow[0].ToString());
+            b = int.Parse(TestContext.DataRow[1].ToString());
+            expected = int.Parse(TestContext.DataRow[2].ToString());
+            cal = new Calculation(a, b);
+            actual = cal.Execute("+");
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }

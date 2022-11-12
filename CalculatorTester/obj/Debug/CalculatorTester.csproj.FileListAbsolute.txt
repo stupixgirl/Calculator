@@ -16,3 +16,4 @@ C:\Users\user\Desktop\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStud
 C:\Users\user\Desktop\Calculator\CalculatorTester\obj\Debug\CalculatorTester.csproj.CopyComplete
 C:\Users\user\Desktop\Calculator\CalculatorTester\obj\Debug\CalculatorTester.dll
 C:\Users\user\Desktop\Calculator\CalculatorTester\obj\Debug\CalculatorTester.pdb
+C:\Users\user\Desktop\Calculator\CalculatorTester\bin\Debug\Data\TestData.csv
